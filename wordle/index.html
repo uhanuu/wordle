@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>현우의 게임</title>
+</head>
+<body>
+
+<!-- <div class="frame"> -->
+    <!-- Header -->
+    <header>
+
+        <nav class ="navigator">
+            <ul>
+                <li><a class="nav-menu" href = "index.html" <b>Home</b></a></li>
+                <li><a class="nav-menu" href = "https://velog.io/@gusdn5492" <b>blog</b></a></li>
+                <li><a class="nav-menu" href = "https://github.com/uhanuu" <b>github</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header -->
+
+    <div style="float:left;" class = "info ">
+        <p> 단어를 입력 했을 때, 초록색의 알파벳이 나오는 경우, </p>
+        <p>    정확한 위치에 정확한 알파벳을 입력한 경우입니다.</p>
+        <p>    만약 단어를 입력했는데 노란색의 알파벳이 나오는 경우,</p>
+        <p>  정확한 알파벳이기 하지만 위치가 잘못된 경우입니다.</p>
+        <p>   마지막으로 회색의 알파벳이 나오는 경우, 전혀 사용하지 않는 알파벳입니다. </p>
+        <p>  이런 경우에는 이 알파벳은 사용하면 안됩니다.</p>
+        <p>  첫 단어 제출시 30초의 타이머가 동작 합니다. </p>
+        <p>   단어 입력 예)수박 -> ㅅㅜㅂㅏㄱ</p>
+        <img src="img/그림1.png" width="400px" alt="">
+        <img src="img/wordleEx.png" width="450px" alt="">
+        <p></p>
+    </div>
+
+    <!-- answer inputs -->
+    <div style="float:right;" class="container">
+        <main class="contents">
+
+            <div class="answer">
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+            </div>
+            <div class="answer">
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+            </div>
+            <div class="answer">
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+            </div>
+            <div class="answer">
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+            </div>
+            <div class="answer">
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+            </div>
+            <div class="answer">
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+                <input required maxlength="1" class="input" readonly>
+            </div>
+            <button class="submission">제출</button>
+            <h3 class="timmer">남은 시간: 30</h3>
+        </main>
+
+    <footer>
+        <div class="keyboard1">
+            <button type="button" value="ㅂ" class="alphabet-btn">ㅂ</button>
+            <button type="button" value="ㅈ" class="alphabet-btn">ㅈ</button>
+            <button type="button" value="ㄷ" class="alphabet-btn">ㄷ</button>
+            <button type="button" value="ㄱ" class="alphabet-btn">ㄱ</button>
+            <button type="button" value="ㅅ" class="alphabet-btn">ㅅ</button>
+            <button type="button" value="ㅛ" class="alphabet-btn">ㅛ</button>
+            <button type="button" value="ㅕ" class="alphabet-btn">ㅕ</button>
+            <button type="button" value="ㅑ" class="alphabet-btn">ㅑ</button>
+            <button type="button" value="ㅐ" class="alphabet-btn">ㅐ</button>
+            <button type="button" value="ㅔ" class="alphabet-btn">ㅔ</button>
+        </div>
+
+        <div class="keyboard2">
+            <div data-testid="spacer" class="Key-spacer"></div>
+            <button type="button" value="ㅁ" class="alphabet-btn">ㅁ</button>
+            <button type="button" value="ㄴ" class="alphabet-btn">ㄴ</button>
+            <button type="button" value="ㅇ" class="alphabet-btn">ㅇ</button>
+            <button type="button" value="ㄹ" class="alphabet-btn">ㄹ</button>
+            <button type="button" value="ㅎ" class="alphabet-btn">ㅎ</button>
+            <button type="button" value="ㅗ" class="alphabet-btn">ㅗ</button>
+            <button type="button" value="ㅓ" class="alphabet-btn">ㅓ</button>
+            <button type="button" value="ㅏ" class="alphabet-btn">ㅏ</button>
+            <button type="button" value="ㅣ" class="alphabet-btn">ㅣ</button>
+            <div data-testid="spacer" class="Key-spacer"></div>
+        </div>
+
+        <div class="keyboard3">
+            <button type="button" value="Enter" class="alphabet-btn">Enter</button>
+            <button type="button" value="ㅋ" class="alphabet-btn">ㅋ</button>
+            <button type="button" value="ㅌ" class="alphabet-btn">ㅌ</button>
+            <button type="button" value="ㅊ" class="alphabet-btn">ㅊ</button>
+            <button type="button" value="ㅍ" class="alphabet-btn">ㅍ</button>
+            <button type="button" value="ㅠ" class="alphabet-btn">ㅠ</button>
+            <button type="button" value="ㅜ" class="alphabet-btn">ㅜ</button>
+            <button type="button" value="ㅡ" class="alphabet-btn">ㅡ</button>
+            <button type="button" value="Backspace" aria-label="Backspace"class="alphabet-btn">Backspace</button>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" height="24" -->
+                    <!-- viewBox="0 0 24 24" width="24" class="game-icon" data-testid="icon-backspace"> -->
+                    <!-- <path fill="var(--color-tone-1)" -->
+                        <!-- d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"> -->
+                    <!-- </path> -->
+                <!-- </svg></button> -->
+        </div>
+    </footer>
+    </div>
+
+    <!-- answer inputs -->
+
+
+    <script src="js/service.js"></script>
+</body>
+</html>
+
+<!-- content aditable 알아보기-->
