@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>숫자야구</title>
+</head>
+<body>
+    <div id="info">
+        <p>숫자야구란 감춰진 4개의 숫자가 무엇인지 맞추는 게임입니다</p>
+        <p>1) 4자리 숫자와 위치가 모두 맞아야 성공입니다.</p>
+        <p>2) 첫 번째 숫자는 0을 제외하고 구성되어 있으며, 나머지 숫자는 0~9까지 구성되어 있습니다.</p>
+        <p>3) 각 숫자는 한번씩만 사용 가능합니다. 즉 각 숫자끼리 중복은 없습니다.</p>
+        <p>4) 숫자와 자리의 위치가 맞으면 스트라이크(S -> 초록), 숫자만 맞으면 볼(B -> 노랑) 입니다.</p>
+        <p>5) 숫자가 하나도 맞지 않을 경우 아웃(OUT -> 회색) 으로 표시됩니다.</p>
+        <p>
+            예시) 감춰진 숫자가 123 이라고 할 경우 
+            - a. 102 = 1S 1B
+            - b. 124 = 2S
+        </p>
+    </div>
+
+    <div class="content">
+      <div class="answer">
+        <input required maxlength="1" class="input" readonly/>
+        <input required maxlength="1" class="input" readonly/>
+        <input required maxlength="1" class="input" readonly/>
+        <input required maxlength="1" class="input" readonly/>
+      </div>
+      <button class="submit-button">제출</button>
+      <button onclick="location.reload()">다시 시작하기</button>
+      <h3 class="timmer">남은 시간: 30</h3>
+    </div>
+
+    <div class="keyBoard">
+      <button type="button" value="Enter" class="alphabet-btn">Enter</button>
+      <button type="button" value="0" class="alphabet-btn">0</button>
+      <button type="button" value="1" class="alphabet-btn">1</button>
+      <button type="button" value="2" class="alphabet-btn">2</button>
+      <button type="button" value="3" class="alphabet-btn">3</button>
+      <button type="button" value="4" class="alphabet-btn">4</button>
+      <button type="button" value="5" class="alphabet-btn">5</button>
+      <button type="button" value="6" class="alphabet-btn">6</button>
+      <button type="button" value="7" class="alphabet-btn">7</button>
+      <button type="button" value="8" class="alphabet-btn">8</button>
+      <button type="button" value="9" class="alphabet-btn">9</button>
+      <button type="button" value="Backspace" aria-label="Backspace"class="alphabet-btn">Backspace</button>
+    </div>
+
+<script src="js/service.js"></script>
+</body>
+</html>
